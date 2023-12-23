@@ -10,19 +10,12 @@ I'm `Jingwei Zhou`, and also `Jayice`, `JayiceZ` etc...
 
 `Jayice` means nothing, when i was a kid, i was struggling with how to name my game role, so i typed at random on my keyboard, then `Jayice` appeared.
 
-Some tags on me:
-- `rookie developer`
-- `rookie photographer`
-- `senior loser`
-
 Focus on (technical)
-- Storage
+- Database
 - Distributed System
-- Operating System
 
 Focus on (non-technical)
 - Photography
-- Cat
 - Movies
 - Hanna
 
