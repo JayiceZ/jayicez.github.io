@@ -1,8 +1,8 @@
 ---
 title: "Linux 块I/O子系统(一):关键对象"
 date: 2022-11-28T17:40:57+08:00
-tags: ["hugo", "website", "blog"]
-description: s
+tags: ["存储"]
+description: Linux 块I/O子系统
 ---
 
 # 概述

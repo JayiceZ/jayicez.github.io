@@ -18,8 +18,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="">
+    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="init">
       <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hugo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/hugo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +70,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703316985038</updated>
-      <workItem from="1703316986139" duration="1173000" />
+      <workItem from="1703316986139" duration="1494000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1703318192448</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703318192448</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,10 +96,14 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1818" y="-778" width="591" height="476" key="find.popup" timestamp="1703317377125">
+    <state x="1818" y="-778" width="591" height="476" key="find.popup" timestamp="1703318444587">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="1818" y="-778" width="591" height="476" key="find.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1703317377124" />
+    <state x="1818" y="-778" width="591" height="476" key="find.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1703318444587" />
   </component>
 </project>

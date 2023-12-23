@@ -1,13 +1,12 @@
 baseURL = "https://example.com/"
 theme = "hugo-ficurinia"
-title = "My nice blog"
+title = "Jayice"
 languageCode = "en"
 defaultContentLanguage = "en"
 
 # this will be included in the footer after the current year the site is last
 # built, followed by the (c) symbol
 # you can use markdown inside this field
-copyright = "Some copyright notice - [my license](https://example.com/license)"
 
 paginate = 5  # number of articles per page in the index
 summaryLength = 70  # number of words for article summaries
@@ -39,7 +38,7 @@ icon512 = "/icon512.png"  # 512x512 png image
 logoRightOfTitle = false  # positions the logo to the right of the title; default: false
 
 showTags = true  # show the Tags menu item; default true
-showRss = true  # show the link for the RSS feed; default true
+showRss = false  # show the link for the RSS feed; default true
 
 imageInArticlePreview = false  # show images in article preview; default false
 fitImageInArticlePreview = false  # make article preview images fit the article preview instead of getting cropped
@@ -128,22 +127,9 @@ randomRelated = false  # sorts related articles in random order (randomized at b
 # other elements in this menu are added automatically from the "pages" folder
 # the folder it will look into can be customized with the pages variable
 # in params above
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 10
+
 # these links (menu.icons) will be added as icon links below the main nav
-[[menu.icons]]
-identifier = "gitlab"
-name = "GitLab"
-url = "https://gitlab.com/gabmus"
-weight = 10
-[[menu.icons]]
-identifier = "gnome"
-name = "GNOME GitLab"
-url = "https://gitlab.gnome.org/gabmus"
-weight = 20
+
 
 # this section is necessary if you want infinite scrolling
 # it allows to output the article list as paged JSON so that "pages" can be retrieved via javascript
