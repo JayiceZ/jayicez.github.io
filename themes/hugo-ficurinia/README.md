@@ -1,4 +1,4 @@
-![logo](static/logo.svg)
+![logo](static/logo1.svg)
 
 # Ficurinia
 
