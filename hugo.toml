@@ -80,7 +80,6 @@ commento = "https://example.com/js/commento.js"
 # enable comments support with cactus comments (cactus.chat)
 cactusCommentsSiteName = "example.com"
 cactusCommentsServerName = "cactus.chat"
-cactusCommentsHomeserver = "https://matrix.cactus.chat:8448"
 
 # enable analytics using Plausible
 plausibleScriptUrl = "https://something.com/..."
