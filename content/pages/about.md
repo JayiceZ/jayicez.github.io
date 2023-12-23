@@ -2,13 +2,14 @@
 title: About
 date: 2019-08-11 10:14:48
 comments: false
-norss: true
 ---
 Hi.
 
-I'm `Jingwei Zhou`, and also `Jayice`, `JayiceZ` etc... 
+I'm `Jayice`.  
 
 `Jayice` means nothing, when i was a kid, i was struggling with how to name my game role, so i typed at random on my keyboard, then `Jayice` appeared.
+
+I’m passionate about coding who specializes in database and distributed system.
 
 Focus on (technical)
 - Database
@@ -20,4 +21,4 @@ Focus on (non-technical)
 - Hanna
 
 
-You can also find me on [Blog](https://jayice.cn/) | [Github](https://github.com/JayiceZ) | [Zhihu](https://www.zhihu.com/people/jayice-29) | [Twitter](https://twitter.com/JayiceZz)
+You can also find me on  [Twitter](https://twitter.com/JayiceZz)
