@@ -1,5 +1,5 @@
 ---
-image: "https://s11.ax1x.com/2023/12/23/pi7hbj0.md.jpg"
+image: "/images/post_pics/2023-photo/meilixueshan.jpg"
 title: "2023摄影合集"
 date: 2023-11-30T12:20:27+08:00
 tags: ["生活"]
