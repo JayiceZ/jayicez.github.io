@@ -41,14 +41,14 @@ Silo的核心实现其实是三个点：
 - commit protocol
 
 ## epoch base
-Silo将时间切分成一个个epoch，一个epoch内的所有事务都结束了，才能一起响应给客户端。这里是严重牺牲了RT来提升throughout，对有交互式需求的应该很难接受。
+Silo将时间切分成一个个epoch，一个epoch内的所有事务都结束了，才能一起响应给客户端。这里是严重牺牲了RT来提升throughout，对有交互式需求的应该很难接受。（后面又发了篇silor来解决这个问题，OSDI '14）
 
 但是对GC和snapshot read友好。
 
 
 epoch有两个，global和per worker
 
-Transaction ID
+## Transaction ID
 tid占64位，可以原子更新。分为三部分：epoch、sequance、status
 其中sequance是epoch内的递增序号。
 status有bit，分别标识：锁标记、是否是最新数据、删除标记。
@@ -62,7 +62,7 @@ tid是计算出来的，而不是通过中心化的分配器，计算规则有�
 比如如果t1写了一个数据，然后t2读到了，那么t1.tid < t2.tid （因为第一个规则
 而如果t1读了一个数据，后续t2覆盖了该数据，那么无法判断两个tid谁大。也就是说tid无法反映anti-dependency.
 
-Commit Protocol
+## Commit Protocol
 Silo实现的是Serializable隔离级别，基于OCC，所以需要在validation阶段对read-set进行检验。
 
 [![piH0f9U.png](https://s11.ax1x.com/2023/12/25/piH0f9U.png)](https://imgse.com/i/piH0f9U)
@@ -87,13 +87,18 @@ Silo实现的是Serializable隔离级别，基于OCC，所以需要在validation
 * y的tid被更新成了新的epoch+sequance：当t1的validation通过且已经install
 无论是哪种情况，都会导致t2的validation失败。故其会检测到rw-anti-dependency
 
-What's more
+# What's more
 
-Phantoms
+## Phantoms
 避免幻读的一个办法是存下predication和results，在validation的时候用predications重读，看与之前的results是否一样。
 
 而Silo采用的方法是B Tree节点版本号校验的方式。B Tree节点在发生结构变动（比如插入删除一条数据）时，会更新节点版本号，如果版本号发生了变更，对这个节点的谓语读很有可能会发生幻读。所以validation主要是校验每个节点的版本号。
 这里是提高了一些false-positive的概率，但是比用predication重读的开销要低
 
-GC
+## GC
 没啥说的，就是Epoch-Base的GC。参考RCU
+
+# 下一步阅读
+- H-Store
+- silor
+- PALM
