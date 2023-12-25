@@ -46,4 +46,35 @@ Silo将时间切分成一个个epoch，一个epoch内的所有事务都结束了
 但是对GC和snapshot read友好。
 
 
-TODO
+epoch有两个，global和per worker
+
+Transaction ID
+tid占64位，可以原子更新。分为三部分：epoch、sequance、status
+其中sequance是epoch内的递增序号。
+status有bit，分别标识：锁标记、是否是最新数据、删除标记。
+
+tid是计算出来的，而不是通过中心化的分配器，计算规则有三个：
+1. 比read-set和write-set中的所有record的tid要大
+2. 比worker上一次分配的tid大
+3. 属于current epoch
+
+大多数情况下，tid反映serial order，但并不总是如此。
+比如如果t1写了一个数据，然后t2读到了，那么t1.tid < t2.tid （因为第一个规则
+而如果t1读了一个数据，后续t2覆盖了该数据，那么无法判断两个tid谁大。也就是说tid无法反映anti-dependency.
+
+Commit Protocol
+Silo实现的是Serializable隔离级别，基于OCC，所以需要在validation阶段对read-set进行检验。
+
+[![piH0f9U.png](https://s11.ax1x.com/2023/12/25/piH0f9U.png)](https://imgse.com/i/piH0f9U)
+
+主要分三4个阶段：
+1. lock write set. 前面说lock status是embadding到tid里的，这里就是直接一个CAS更新状态位
+2. get global epoch. 要有fence，避免re-order
+3. validation. 检测read-set中的数据行的tid是否与之前读的时候一样。（被上锁也算）
+4. install write. validation通过，计算出一个tid(计算规则上面说过了)，install write-set
+
+如何证明这是Serializable的呢？论文认为这是commit protocol可以等价为S2PL：
+在validation阶段确认整个过程中read-set没有被修改or即将被修改（有lock也会导致validation失败），所以读过程等价于加了读锁
+而第一阶段对write-set上锁就相当于加写锁。
+
+然后举了个具体的例子来说明避免write-skew问题：
