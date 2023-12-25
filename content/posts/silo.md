@@ -78,3 +78,22 @@ Silo实现的是Serializable隔离级别，基于OCC，所以需要在validation
 而第一阶段对write-set上锁就相当于加写锁。
 
 然后举了个具体的例子来说明避免write-skew问题：
+
+[![piHbkge.png](https://s11.ax1x.com/2023/12/25/piHbkge.png)](https://imgse.com/i/piHbkge)
+
+如果t1的validation通过，那么t1后续一定会提交，所以反推一下，如果t1的validation通过，t2的validation会不会通过，如果会，则会出现A5B异常。
+如果t1的validation通过，那么其对y的加锁肯定已经发生了，所以y的情况有两种可能：
+* y的tid上面有锁：当t1validatiton通过但还没有install write时
+* y的tid被更新成了新的epoch+sequance：当t1的validation通过且已经install
+无论是哪种情况，都会导致t2的validation失败。故其会检测到rw-anti-dependency
+
+What's more
+
+Phantoms
+避免幻读的一个办法是存下predication和results，在validation的时候用predications重读，看与之前的results是否一样。
+
+而Silo采用的方法是B Tree节点版本号校验的方式。B Tree节点在发生结构变动（比如插入删除一条数据）时，会更新节点版本号，如果版本号发生了变更，对这个节点的谓语读很有可能会发生幻读。所以validation主要是校验每个节点的版本号。
+这里是提高了一些false-positive的概率，但是比用predication重读的开销要低
+
+GC
+没啥说的，就是Epoch-Base的GC。参考RCU
