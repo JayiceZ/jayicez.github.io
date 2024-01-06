@@ -18,8 +18,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="aries">
+    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="hyper gc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/hyper-gc.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/hyper-gc.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,8 @@
       <updated>1703316985038</updated>
       <workItem from="1703316986139" duration="14348000" />
       <workItem from="1703334976606" duration="542000" />
-      <workItem from="1703410924016" duration="22095000" />
+      <workItem from="1703410924016" duration="22704000" />
+      <workItem from="1704532708544" duration="6578000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1703318192448</created>
@@ -202,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703928109410</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="hyper gc">
+      <created>1704112240572</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1704112240572</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +234,8 @@
     <MESSAGE value="enable picture preview" />
     <MESSAGE value="silo" />
     <MESSAGE value="aries" />
-    <option name="LAST_COMMIT_MESSAGE" value="aries" />
+    <MESSAGE value="hyper gc" />
+    <option name="LAST_COMMIT_MESSAGE" value="hyper gc" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1859" y="-733" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1703319292802">
@@ -237,10 +247,10 @@
     </state>
     <state x="1254" y="-980" width="1720" height="880" key="DiffContextDialog/1154.-1055.1920.1055/0.25.1680.949@1154.-1055.1920.1055" timestamp="1703318850849" />
     <state x="1254" y="-1003" key="DiffContextDialog/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1703415623591" />
-    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1703928110460">
+    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1704112241874">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1703928110460" />
+    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1704112241874" />
     <state x="1920" y="-621" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1703318736525">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
@@ -249,11 +259,11 @@
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
     <state x="1818" y="-778" width="623" height="476" key="find.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1703334505035" />
-    <state x="1779" y="-291" key="run.anything.popup" timestamp="1703927932229">
+    <state x="1779" y="-291" key="run.anything.popup" timestamp="1704534134123">
       <screen x="1154" y="-1055" width="1920" height="1055" />
     </state>
     <state width="670" height="57" key="run.anything.popup/1154.-1055.1920.1055/0.25.1680.1025@1154.-1055.1920.1055" timestamp="1703333735480" />
-    <state x="1779" y="-291" key="run.anything.popup/1154.-1055.1920.1055/0.25.1680.949@1154.-1055.1920.1055" timestamp="1703927932229" />
-    <state x="1779" y="-291" key="run.anything.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1703861541845" />
+    <state x="1779" y="-291" key="run.anything.popup/1154.-1055.1920.1055/0.25.1680.949@1154.-1055.1920.1055" timestamp="1704534134123" />
+    <state x="1779" y="-291" key="run.anything.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1704533190475" />
   </component>
 </project>
