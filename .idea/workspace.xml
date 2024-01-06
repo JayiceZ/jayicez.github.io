@@ -18,10 +18,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="hyper gc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/hyper-gc.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/hyper-gc.md" afterDir="false" />
-    </list>
+    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="hyper gc" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +73,7 @@
       <workItem from="1703316986139" duration="14348000" />
       <workItem from="1703334976606" duration="542000" />
       <workItem from="1703410924016" duration="22704000" />
-      <workItem from="1704532708544" duration="6578000" />
+      <workItem from="1704532708544" duration="6953000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1703318192448</created>
@@ -211,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704112240572</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="hyper gc">
+      <created>1704543828765</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1704543828765</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,10 +251,10 @@
     </state>
     <state x="1254" y="-980" width="1720" height="880" key="DiffContextDialog/1154.-1055.1920.1055/0.25.1680.949@1154.-1055.1920.1055" timestamp="1703318850849" />
     <state x="1254" y="-1003" key="DiffContextDialog/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1703415623591" />
-    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1704112241874">
+    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1704543830616">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1704112241874" />
+    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1704543830616" />
     <state x="1920" y="-621" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1703318736525">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>

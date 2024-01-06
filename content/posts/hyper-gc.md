@@ -4,6 +4,7 @@ date: 2024-01-01T16:20:27+08:00
 tags: ["数据库","论文"]
 description: 针对HTAP workload提出的MVCC GC优化
 ---
+原文：https://users.cs.utah.edu/~pandey/courses/cs6530/fall22/papers/mvcc/p128-bottcher.pdf
 
 # 问题
 在使用MVCC技术的数据库上，长时间运行的事务可能会导致一种恶性循环
