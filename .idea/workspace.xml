@@ -18,8 +18,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="hyper gc">
+    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="dynamodb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/dynamodb-txn.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/dynamodb-txn.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,8 @@
       <workItem from="1703316986139" duration="14348000" />
       <workItem from="1703334976606" duration="542000" />
       <workItem from="1703410924016" duration="22704000" />
-      <workItem from="1704532708544" duration="8856000" />
+      <workItem from="1704532708544" duration="14732000" />
+      <workItem from="1705077294711" duration="3664000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1703318192448</created>
@@ -224,7 +226,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704544298132</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="dynamodb">
+      <created>1704900580687</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1704900580687</updated>
+    </task>
+    <task id="LOCAL-00023" summary="dynamodb">
+      <created>1704900590422</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1704900590422</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +264,8 @@
     <MESSAGE value="silo" />
     <MESSAGE value="aries" />
     <MESSAGE value="hyper gc" />
-    <option name="LAST_COMMIT_MESSAGE" value="hyper gc" />
+    <MESSAGE value="dynamodb" />
+    <option name="LAST_COMMIT_MESSAGE" value="dynamodb" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1859" y="-733" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1703319292802">
@@ -260,10 +277,10 @@
     </state>
     <state x="1254" y="-980" width="1720" height="880" key="DiffContextDialog/1154.-1055.1920.1055/0.25.1680.949@1154.-1055.1920.1055" timestamp="1703318850849" />
     <state x="1254" y="-1003" key="DiffContextDialog/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1703415623591" />
-    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1704544299288">
+    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1704900591389">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1704544299288" />
+    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1704900591389" />
     <state x="1920" y="-621" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1703318736525">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
