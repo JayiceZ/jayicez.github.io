@@ -7,13 +7,15 @@ description: DynamoDB的事务实现
 
 （论文第一章节就表明 我们DynamoDB和DynamoDB没关系！ 第二章节又提了一次我们名字差不多但架构完全不一样。233）
 
+
+
+
+## 事务
 Transactions are submitted as single request.
 DynamoDB不支持交互式事务，给出的原因是交互式事务往往是一个长事务，长时间持锁影响系统吞吐，而毕竟提供"predictable performance"是DynamoDB的一大设计原则。
 
 DynamoDB所有的更新都是直接in-place，没实现MVCC，所以交互式事务对性能的影响会更大。
 
-
-## 事务
 事务请求需要经过coordinator走2pc，非事务请求直接在存储节点执行
 ```
 To simplify the design and take advantage of low-contention workloads, DynamoDB uses an optimistic concurrency control scheme that avoids locking altogether.
