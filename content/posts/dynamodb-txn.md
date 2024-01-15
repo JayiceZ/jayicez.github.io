@@ -15,23 +15,30 @@ DynamoDB所有的更新都是直接in-place，没实现MVCC，所以交互式事
 
 ## 事务
 事务请求需要经过coordinator走2pc，非事务请求直接在存储节点执行
-
+```
 To simplify the design and take advantage of low-contention workloads, DynamoDB uses an optimistic concurrency control scheme that avoids locking altogether.
+
+```
 DynamoDB采用乐观并发控制 OCC
 
 用户接口上，提供了非事务的GetItem、PutItem、DeleteItem、UpdateItem接口，以及TransactGetItems和TransactWriteItems的事务接口。
 
 其中TransactGetItems会提供一个一致性的快照视图，如果执行过程中遇到了写冲突会直接返回失败。
+```
+The TransactWriteItems may optionally include one or more preconditions on current values of the items.
+DynamoDB rejects the TransactWriteItems request if any of the preconditions are not met.
+```
 
-The TransactWriteItems may optionally include one or more preconditions on current values of the items. DynamoDB rejects the TransactWriteItems request if any of the preconditions are not met.
 TransactWriteItems支持跨表事务，且支持condition写，文中给了一个用户下单的事务场景，其中的condition就是校验用户是否存在
 
 [![pFiziOf.md.jpg](https://s11.ax1x.com/2024/01/15/pFiziOf.md.jpg)](https://imgse.com/i/pFiziOf)
 
 ## Timestamp Ordering
 每个coordinator的时钟由AWS time-sync service分配，会有a few microseconds的误差。每个事务由其所在的coordinator节点分配事务ts，没有做commit-wait、read-wait之类。文中认为本地时钟也可以实现serializability，只不过更准确的时钟可以达到更高的事务成功率，以及事务的执行顺序更接近于事务发生时墙上时钟的顺序。
-Although serializability holds even if the transaction coordinators do not have synchronized clocks, more accurate clocks result in more successful transactions and a serialization order that complies with real time.
 
+```
+Although serializability holds even if the transaction coordinators do not have synchronized clocks, more accurate clocks result in more successful transactions and a serialization order that complies with real time.
+```
 
 ### write transaction protocol
 item上存储一个write-ts，代表这个item最后一个更新事务的commit-ts。
@@ -88,8 +95,10 @@ DynamoDB为了避免这个额外的写，采用了两阶段读。
 类似于Thomas Write Rule。但如果最新写入是一个部分更新，就不适用。
 
 ### 对同一item的多个写事务可以被同时prepared
-Multiple transactions that write the same item may be prepared at the same time. A storage node that has already prepared a transaction can accept a second transaction that is attempting to write the same item
 
+```
+Multiple transactions that write the same item may be prepared at the same time. A storage node that has already prepared a transaction can accept a second transaction that is attempting to write the same item
+```
 一个item如果已经接受了一个ongoingTransaction的prepare，那么其也可以接受另一个事务的prepare，最后提交的时候排队。
 
 这个感觉很tricky，细节估计很难处理。。。
