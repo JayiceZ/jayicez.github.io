@@ -1,5 +1,5 @@
 ---
-title: "『Paper Notes』Distributed Transactions at Scale in Amazon DynamoDB"
+title: "ATC '23 Distributed Transactions at Scale in Amazon DynamoDB"
 date: 2024-01-10T16:20:27+08:00
 tags: ["数据库","论文"]
 description: DynamoDB的事务实现
@@ -127,3 +127,28 @@ DynamoDB在这个item上记录一个读取时间戳`read-ts`，避免后续ts<re
 Obviously
 
 
+
+
+
+
+
+## 优化：
+1. “减少项目与磁盘的交互” 美化成：发现了系统性能不足，自己排查发现是磁盘IO过多，确定了优化方案也就是加上了二级缓存，最后提升了性能（接口响应时间减少了40%，编一个）
+	怎么排查？：
+		1. go-pprof查看项目的调用栈，找到耗时的函数，发现就是读写磁盘的那个函数 https://cloud.tencent.com/developer/article/2108993
+		2. linux iostat命令 发现磁盘的响应时间确实很慢，压力比较大 https://www.cnblogs.com/zhongguiyao/p/13934226.html
+ 		3. 设计二级缓存方案，开发，得到结果，提升40%
+		
+
+
+## 一些可以编的功能开发：
+
+	1. redis大key拆分
+		包括怎么排查和怎么优化 https://zhuanlan.zhihu.com/p/622474134 https://zhuanlan.zhihu.com/p/537367637
+	2. redis令牌桶实现 分布式限流
+		令牌桶和漏斗算法区别：https://blog.csdn.net/weixin_37862824/article/details/124814827
+		java实现：https://juejin.cn/post/7054875996146630693		
+	3. java对象池
+	    1. 为什么需要？开发了一个新功能，发现内存占比很高，接口很慢
+	    2. 排查发现，新引入的一个对象实例特别多。怎么排查发现？https://zhuanlan.zhihu.com/p/606574705 https://www.cnblogs.com/sxdcgaq8080/p/11089664.html
+	    3. 引入对象池，复用对象，减少内存分配 https://juejin.cn/post/7107913254973734942
