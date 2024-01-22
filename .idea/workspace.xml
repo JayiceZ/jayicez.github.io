@@ -18,7 +18,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="pg ssi">
+    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/pg-ssi.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/pg-ssi.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +78,7 @@
       <workItem from="1703410924016" duration="22704000" />
       <workItem from="1704532708544" duration="14732000" />
       <workItem from="1705077294711" duration="7990000" />
-      <workItem from="1705329897310" duration="3027000" />
+      <workItem from="1705329897310" duration="9036000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1703318192448</created>
@@ -268,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1705835092459</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1705836762137</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1705836762137</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1705836776627</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1705836776627</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +309,8 @@
     <MESSAGE value="hyper gc" />
     <MESSAGE value="dynamodb" />
     <MESSAGE value="pg ssi" />
-    <option name="LAST_COMMIT_MESSAGE" value="pg ssi" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1859" y="-733" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1705835015663">
@@ -310,10 +326,10 @@
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
     <state x="1154" y="-964" key="MergeDialog/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1705326549137" />
-    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1705835093623">
+    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1705836779020">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1705835093623" />
+    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1705836779020" />
     <state x="1920" y="-621" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1705326539430">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
@@ -322,16 +338,16 @@
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
     <state x="1818" y="-778" width="623" height="476" key="find.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1703334505035" />
-    <state x="1779" y="-291" key="run.anything.popup" timestamp="1705769991266">
+    <state x="1779" y="-291" key="run.anything.popup" timestamp="1705930498275">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
     <state width="670" height="57" key="run.anything.popup/1154.-1055.1920.1055/0.25.1680.1025@1154.-1055.1920.1055" timestamp="1703333735480" />
     <state x="1779" y="-291" key="run.anything.popup/1154.-1055.1920.1055/0.25.1680.949@1154.-1055.1920.1055" timestamp="1704534134123" />
     <state x="1779" y="-291" key="run.anything.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1705769991266" />
-    <state x="1779" y="-291" key="run.anything.popup/1154.-1080.1920.1080/0.25.1680.949@1154.-1080.1920.1080" timestamp="1705328707486" />
-    <state x="1779" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1705768987546">
+    <state x="1779" y="-291" key="run.anything.popup/1154.-1080.1920.1080/0.25.1680.949@1154.-1080.1920.1080" timestamp="1705930498275" />
+    <state x="1779" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1705930192403">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="1779" y="-839" width="670" height="676" key="search.everywhere.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1705768987546" />
+    <state x="1779" y="-839" width="670" height="676" key="search.everywhere.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1705930192403" />
   </component>
 </project>
