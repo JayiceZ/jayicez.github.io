@@ -58,10 +58,6 @@ description: 用txyz粗读一下FAST'24感兴趣的论文
 论文认为现有复制协议无法发挥写优化存储引擎（如基于ssd的lsm）的性能，因为状态机为了避免不确定性，会采取顺序apply的方式，只能做到比较低的吞吐，无法发挥lsm的性能。而且读只能从leader读，或者由follower来执行read index机制（引入多一次RTT）。
 而且写入会有两次RTT，client->leader->follower
 ﻿
-﻿[![pFWl0xK.jpg](https://s21.ax1x.com/2024/03/19/pFWl0xK.jpg)](https://imgse.com/i/pFWl0xK)
- [![pFWlw26.jpg](https://s21.ax1x.com/2024/03/19/pFWlw26.jpg)](https://imgse.com/i/pFWlw26)
- [![pFWlaP1.jpg](https://s21.ax1x.com/2024/03/19/pFWlaP1.jpg)](https://imgse.com/i/pFWlaP1)
- [![pFWld8x.jpg](https://s21.ax1x.com/2024/03/19/pFWld8x.jpg)](https://imgse.com/i/pFWld8x)
  [![pFWlDKO.jpg](https://s21.ax1x.com/2024/03/19/pFWlDKO.jpg)](https://imgse.com/i/pFWlDKO)
 ﻿
 
