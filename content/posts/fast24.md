@@ -1,5 +1,4 @@
 ---
-image: "/images/post_pics/aries/aries.jpg"
 title: "FAST'24 速读"
 date: 2024-03-19T21:20:27+08:00
 tags: ["存储","论文"]
