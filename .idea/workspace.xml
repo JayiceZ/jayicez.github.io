@@ -18,9 +18,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'">
+    <list default="true" id="99cd4b2d-5d77-4052-a446-29d6d5b19a03" name="Default Changelist" comment="fast 24">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/pg-ssi.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/pg-ssi.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +46,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/posts" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/images/post_pics/2023-photo" />
-      <recent name="$PROJECT_DIR$/content" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/content/images/post_pics/aries" />
       <recent name="$PROJECT_DIR$/themes/hugo-ficurinia/static" />
       <recent name="$PROJECT_DIR$/content/images" />
-      <recent name="$PROJECT_DIR$/content/posts" />
+      <recent name="$PROJECT_DIR$/content" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/images/post_pics/2023-photo" />
       <recent name="$PROJECT_DIR$/content" />
     </key>
   </component>
@@ -78,7 +77,13 @@
       <workItem from="1703410924016" duration="22704000" />
       <workItem from="1704532708544" duration="14732000" />
       <workItem from="1705077294711" duration="7990000" />
-      <workItem from="1705329897310" duration="9036000" />
+      <workItem from="1705329897310" duration="10914000" />
+      <workItem from="1709461545932" duration="590000" />
+      <workItem from="1710857098754" duration="1565000" />
+      <workItem from="1710858905248" duration="65000" />
+      <workItem from="1710859354110" duration="6000" />
+      <workItem from="1710859417825" duration="6996000" />
+      <workItem from="1711272214615" duration="4773000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1703318192448</created>
@@ -283,7 +288,49 @@
       <option name="project" value="LOCAL" />
       <updated>1705836776627</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="pg ssi">
+      <created>1705931919806</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1705931919806</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fast 24">
+      <created>1710857591667</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1710857591667</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fast 24">
+      <created>1710857681592</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1710857681592</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fast 24">
+      <created>1710857716824</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1710857716824</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fast 24">
+      <created>1710857918087</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1710857918087</updated>
+    </task>
+    <task id="LOCAL-00035" summary="fast 24">
+      <created>1711279217068</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1711279217068</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,9 +355,10 @@
     <MESSAGE value="aries" />
     <MESSAGE value="hyper gc" />
     <MESSAGE value="dynamodb" />
-    <MESSAGE value="pg ssi" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="pg ssi" />
+    <MESSAGE value="fast 24" />
+    <option name="LAST_COMMIT_MESSAGE" value="fast 24" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1859" y="-733" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1705835015663">
@@ -326,10 +374,10 @@
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
     <state x="1154" y="-964" key="MergeDialog/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1705326549137" />
-    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1705836779020">
+    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1711279218801">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1705836779020" />
+    <state x="1714" y="-803" key="Vcs.Push.Dialog.v2/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1711279218801" />
     <state x="1920" y="-621" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1705326539430">
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
@@ -338,12 +386,12 @@
       <screen x="1154" y="-1080" width="1920" height="1080" />
     </state>
     <state x="1818" y="-778" width="623" height="476" key="find.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1703334505035" />
-    <state x="1779" y="-291" key="run.anything.popup" timestamp="1705930498275">
-      <screen x="1154" y="-1080" width="1920" height="1080" />
+    <state x="1779" y="-291" key="run.anything.popup" timestamp="1711279605864">
+      <screen x="1154" y="-1055" width="1920" height="1055" />
     </state>
     <state width="670" height="57" key="run.anything.popup/1154.-1055.1920.1055/0.25.1680.1025@1154.-1055.1920.1055" timestamp="1703333735480" />
-    <state x="1779" y="-291" key="run.anything.popup/1154.-1055.1920.1055/0.25.1680.949@1154.-1055.1920.1055" timestamp="1704534134123" />
-    <state x="1779" y="-291" key="run.anything.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1705769991266" />
+    <state x="1779" y="-291" key="run.anything.popup/1154.-1055.1920.1055/0.25.1680.949@1154.-1055.1920.1055" timestamp="1711279605864" />
+    <state x="1779" y="-291" key="run.anything.popup/1154.-1080.1920.1080/0.25.1680.1025@1154.-1080.1920.1080" timestamp="1711275085952" />
     <state x="1779" y="-291" key="run.anything.popup/1154.-1080.1920.1080/0.25.1680.949@1154.-1080.1920.1080" timestamp="1705930498275" />
     <state x="1779" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1705930192403">
       <screen x="1154" y="-1080" width="1920" height="1080" />
