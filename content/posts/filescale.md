@@ -1,5 +1,5 @@
 ---
-title: "SOCC'23  Fast and Elastic Metadata Management for Distributed File Systems"
+title: "FileScale: Fast and Elastic Metadata Management for Distributed File Systems"
 date: 2024-03-19T15:20:27+08:00
 tags: ["文件系统","论文"]
 description: 字节HDFS namespace优化
