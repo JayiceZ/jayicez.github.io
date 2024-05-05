@@ -22,5 +22,9 @@ Focus on (non-technical)
 - Movies
 - Hanna
 
+Wechat:
+```
+echo amF5aWNlNjY2Cg==|base64 -d
+```
 
-You can also find me on  [Twitter](https://twitter.com/JayiceZz)
+(You can also find me on  [Twitter](https://twitter.com/JayiceZz)
