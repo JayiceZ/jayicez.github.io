@@ -20,7 +20,6 @@ Focus on (technical)
 Focus on (non-technical)
 - Photography
 - Movies
-- Hanna
 
 Wechat:
 ```
