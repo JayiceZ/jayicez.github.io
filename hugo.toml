@@ -24,7 +24,7 @@ showcaseDir = "showcase"  # create a content directory that shows a special show
 # shows a specified single page as a home page, instead of the traditional articles list
 # requires setting `homeSinglePage`
 # goes well with extraContentDirs
-showSinglePageAsHome = true
+showSinglePageAsHome = false
 homeSinglePage = "/home"
 
 # It's best to put these icons in the "static" folder of your site
