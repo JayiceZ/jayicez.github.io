@@ -26,12 +26,12 @@ PolarDB则是引入了一个remote buffer pool，在这个rbp上做了一套类�
 事务要修改一行时，需要给这行标记上这次事务的txn_id, 以便其他事务根据这个txn_id来判断事务状态。事务提交后，获取一个ts写到本地TIT中，并写到这行的元数据里（但这个操作是lazy的，如果本事务提交，而其他事务没读到commit_ts, 那么它需要去txn_id所在的master上读一下TIT来判断事务状态）。
 
 
-[![pFiziOf.md.jpg](https://github.com/user-attachments/assets/6f101d1c-780e-4935-84cf-a96614c9a7d7)
+![pFiziOf.md.jpg](https://github.com/user-attachments/assets/6f101d1c-780e-4935-84cf-a96614c9a7d7)
 
 
 可见性判断伪代码
 
-[![pFiziOf.md.jpg](https://github.com/user-attachments/assets/c8bf1fe5-8032-44e4-83b8-d967520072c1)
+![pFiziOf.md.jpg](https://github.com/user-attachments/assets/c8bf1fe5-8032-44e4-83b8-d967520072c1)
 
 ## Buffer Fusion
 
@@ -41,7 +41,7 @@ Remote Buffer Pool的核心，集中存储Page。
 - valid：指示local buffer pool中的这个page是否有效, master刷脏的时候会将其他master lbp中对应的page给invalid掉，使后者下次读这个page时去访问rdp。
 - r_addr: rdp中这个page的地址
 
-[![pFiziOf.md.jpg](https://github.com/user-attachments/assets/fa04002f-3350-4799-99bd-b9264979ab8b)
+![pFiziOf.md.jpg](https://github.com/user-attachments/assets/fa04002f-3350-4799-99bd-b9264979ab8b)
 
 ## Lock Fusion
 
