@@ -25,7 +25,7 @@ showcaseDir = "showcase"  # create a content directory that shows a special show
 # requires setting `homeSinglePage`
 # goes well with extraContentDirs
 showSinglePageAsHome = true
-homeSinglePage = "/posts"
+homeSinglePage = "/home"
 
 # It's best to put these icons in the "static" folder of your site
 logo = "/logo.svg"
