@@ -10,6 +10,7 @@ tags:
 
 
 原文：https://dl.acm.org/doi/pdf/10.1145/3035918.3035919
+
 很多OCC实现Serializable时都使用了类似write-snapshot-isolation的方案, 即事务执行需要4个流程：read-modify-validate-commit。
 
 其中validate阶段需要校验自己的read-set在start_ts和commit_ts之间没有被其他已提交的事务破坏，否则的话就是出现了read-write-conflict，需要abort然后重试。
