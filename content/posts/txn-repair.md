@@ -15,7 +15,7 @@ tags:
 其中validate阶段需要校验自己的read-set在start_ts和commit_ts之间没有被其他已提交的事务破坏，否则的话就是出现了read-write-conflict，需要abort然后重试。
 
 而如何做这个validate呢？
-- SQL Server的Hekaton直接用predication重读一遍，看这两次的结果是否一致，简单粗暴  [Hekaton: SQL Server’s Memory-Optimized OLTP Engine。crdb叫read refresh](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/06/Hekaton-Sigmod2013-final.pdf)
+- SQL Server的Hekaton直接用predication重读一遍，看这两次的结果是否一致，简单粗暴  [Hekaton: SQL Server’s Memory-Optimized OLTP Engine](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/06/Hekaton-Sigmod2013-final.pdf) crdb叫read refresh
 - HyPer不维护read-set，而是维护predications，validate时判断是否有新提交的数据命中了自己的predications，有则validate失败。[Fast Serializable Multi-Version Concurrency Control for Main-Memory Database Systems](https://15721.courses.cs.cmu.edu/spring2019/papers/04-mvcc2/p677-neumann.pdf)
 
 这个文章的核心思想是：在validate失败时进行局部repair而不是直接整个abort。
